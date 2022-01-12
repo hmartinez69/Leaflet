@@ -64,50 +64,52 @@
 	<p class="tagline">an open-source JavaScript library<br> for mobile-friendly interactive maps</p>
 </header>
 
-<ul class="nav">
-	<li>
-		{% if page.title == nil %}
-			<span>Overview</span>
-		{% else %}
-			<a href="{{ root }}index.html">Overview</a>
-		{% endif %}
-	</li>
-	<li>
-		{% if page.title == 'Tutorials' %}
-			<span>Tutorials</span>
-		{% else %}
-			<a href="{{ root }}examples.html"{% if page.tutorial == true %} class="active"{% endif %}>Tutorials</a>
-		{% endif %}
-	</li>
-	<li>
-		{% if page.title == 'Documentation' %}
-			<span>Docs</span>
-		{% else %}
-			<a href="{{ root }}reference.html">Docs</a>
-		{% endif %}
-	</li>
-	<li>
-		{% if page.title == 'Download' %}
-			<span>Download</span>
-		{% else %}
-			<a href="{{ root }}download.html">Download</a>
-		{% endif %}
-	</li>
-	<li>
-		{% if page.title == 'Plugins' %}
-			<span>Plugins</span>
-		{% else %}
-			<a href="{{ root }}plugins.html">Plugins</a>
-		{% endif %}
-	</li>
-	<li>
-		{% if page.title == 'Blog' %}
-			<span>Blog</span>
-		{% else %}
-			<a href="{{ root }}blog.html"{% if page.post == true %} class="active"{% endif %}>Blog</a>
-		{% endif %}
-	</li>
-</ul>
+<nav>
+	<ul class="nav">
+		<li>
+			{% if page.title == nil %}
+				<span>Overview</span>
+			{% else %}
+				<a href="{{ root }}index.html">Overview</a>
+			{% endif %}
+		</li>
+		<li>
+			{% if page.title == 'Tutorials' %}
+				<span>Tutorials</span>
+			{% else %}
+				<a href="{{ root }}examples.html"{% if page.tutorial == true %} class="active"{% endif %}>Tutorials</a>
+			{% endif %}
+		</li>
+		<li>
+			{% if page.title == 'Documentation' %}
+				<span>Docs</span>
+			{% else %}
+				<a href="{{ root }}reference.html">Docs</a>
+			{% endif %}
+		</li>
+		<li>
+			{% if page.title == 'Download' %}
+				<span>Download</span>
+			{% else %}
+				<a href="{{ root }}download.html">Download</a>
+			{% endif %}
+		</li>
+		<li>
+			{% if page.title == 'Plugins' %}
+				<span>Plugins</span>
+			{% else %}
+				<a href="{{ root }}plugins.html">Plugins</a>
+			{% endif %}
+		</li>
+		<li>
+			{% if page.title == 'Blog' %}
+				<span>Blog</span>
+			{% else %}
+				<a href="{{ root }}blog.html"{% if page.post == true %} class="active"{% endif %}>Blog</a>
+			{% endif %}
+		</li>
+	</ul>
+</nav>
 
 <div class="container">
 
